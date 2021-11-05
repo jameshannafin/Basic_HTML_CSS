@@ -1,0 +1,39 @@
+table
+	{
+		border: 1px solid black;
+		text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	}
+	
+td:hover
+	{
+		background-color: yellow;
+		color: black;
+		
+		tr, td
+			{
+				background-color: orange;
+				color: blue;
+			}
+	}
+	
+tr, th
+	{
+		background-color: navy;
+		color: white;
+		text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	}
+	
+tr, td
+	{
+		background-color: aqua;
+		color: navy;
+		text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	}
+	
+	h1
+
+		{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+	
