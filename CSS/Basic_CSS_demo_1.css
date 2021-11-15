@@ -22,9 +22,8 @@ h1
 Select all squares in the array
 */
 
-.container .squares:nth-child(-n+4) 
-{
-    background-image: url("../images/icons/smiley1.png");
+.container .squares:nth-child(-n+4){
+    background-image: url("../images/icons/smiley2.png");
     color: rgb(252, 49, 161);
     float: left;
     width: 100px;
@@ -44,7 +43,7 @@ Select all squares paragraphs in the array
     p
         {
             font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-            color: #ff006f;
+            color: #2b0eae;
             font-size: 1.5em;
             font-weight: 900;
             text-align: center;
@@ -56,7 +55,7 @@ Select all squares paragraphs in the array
     Individually select a square in the array
     */
 
-    .squares:nth-child(1) {
+    .squares:nth-child(1){
             background-color: #4240ff;
         }
 
@@ -65,12 +64,12 @@ Select all squares paragraphs in the array
             color: #ab3fdd;
         }
 
-    .squares:nth-child(3)
+    .squares :nth-child(3)
         {
             background-color: #13d434;
         }
 
-     .squares:nth-child(4)
+     .squares :nth-child(4)
         {
             background-color: #f30404;
         }
@@ -79,9 +78,9 @@ Select all squares paragraphs in the array
         Hover Effects
         */
 
-    .container .squares:nth-child(-n+4) :hover
+    .container .squares:nth-child(-n+4):hover
         {
-             background-image: url("../images/icons/smiley2.png");
+             background-image: url("../images/icons/smiley1.png");
              transform: scale(.5);
              animation:race;
              animation-duration: 2.5s;
@@ -114,7 +113,8 @@ Select all squares paragraphs in the array
             0%, 100% 
                 {
                     transform: translateY(0px);
-                    background-image: url("../images/icons/smiley1.png")                }
+                    background-image: url("../images/icons/smiley1.png")
+                }
             50%
                 {
                     transform: translateY(330px);
