@@ -225,7 +225,7 @@ CONTACT STYLES
         padding: 10px;
         border-radius: 8px;
         margin: 0px auto;
-        background-color: rgba(100,65,0.3);
+        background-color: rgb(65, 77, 133);
         box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1),1px 2px 10px 0 rgba(0,0,0,0.5); 
     }
 
@@ -255,9 +255,10 @@ CONTACT STYLES
 
 .reservation p 
     {
-        color: #13161b;
+        color: #060607;
         width: 50%;
         margin: 0px auto;
+        text-align: center;
     }
 
 .reservation form
@@ -284,10 +285,10 @@ CONTACT STYLES
         color: #8d8e8f;
         padding: 2% 1% 2% 7%;
         width: 80%;
-        border-top: 1px solid #090b0d;
+        border-top: 1px solid #0c6dce;
         border-right: 2px solid #424549;
         border-bottom: 2px solid#424549;
-        border-left: 1px solid #090b0d;
+        border-left: 1px solid #0871da;
         margin: 10px lem;
         border-radius: 7px;
         background: #13161b;
@@ -348,8 +349,8 @@ CONTACT STYLES
 
 .submit input[type='submit']:hover
     {
-        color: #000;
-        background-color: #8d0e8f;
+        color: rgb(34, 28, 28);
+        background-color: #45bd27;
         box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
     }
 
