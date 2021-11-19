@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang ='en'>  
+
+   <head>     
+		<title> Basic HTML </title>
+		<meta charset = "utf-8">
+		<meta name = "Author" content="James">
+        <link rel="icon" type="image/x-icon" href="./images/favicon-2.png">
+        <style>
+            .grad
+                {        
+                    background-image: linear-gradient(to right, rgb(32, 21, 138),rgb(56, 51, 43),rgb(24, 92, 131),rgb(49, 34, 71),blue,indigo,rgb(47, 23, 133));
+                }
+
+            .center
+                {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80%;
+                    margin-top: 5em;
+                    
+                }
+
+            .blur
+                {
+
+                    filter: blur(7px);
+                }
+
+            .border_1
+                {
+                    border-radius: 50px 50px;
+                
+                }
+
+            .footer_1
+                {
+                   
+                    text-align: center;
+                    font-weight: 900;
+                }
+            .table
+                {
+                   
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                    border: 2px solid crimson;
+                    border-radius: 10px;
+                    padding: 1em;
+                }
+
+            table td   
+                {
+                    padding: 1em;
+
+                }
+
+            .table_header th
+                {
+                    background-color: crimson;
+                    font-size: 1.2em;
+                    padding: 1em;
+                    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em red, 0 0 0.2em red;
+                }
+
+            .table_data  
+                {
+                    opacity: 70%;
+                    background-color: crimson;
+                    background-color:  linear-gradient(to right, rgb(8, 90, 197),rgb(78, 204, 61),rgb(211, 31, 100),rgb(92, 173, 45),blue,indigo,rgb(47, 23, 133));
+                    color: black;
+                    font-weight: 400;
+                    outline: darkorchid;
+                    outline-offset: 10px;
+                    padding-top: 5em;
+                    border-radius: 10px;
+                    border: 1px solid orangered;
+                    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em red, 0 0 0.2em red;
+                   
+                }
+
+            .header_1
+                {
+                    padding-top: .8em;
+                    text-align: center;
+                    text-decoration: orangered;
+                    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+                    font-size: 4.5em;
+                    
+                }
+            .header_2
+                {
+                   
+                    text-align: center;
+                    text-decoration: orangered;
+                    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+                    font-size: 2.5em;
+                    
+                }
+
+            .pad_1
+                {
+                    padding-top: 5em;
+                }
+
+            /* Container holding the image and the text */
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+
+                }
+
+                /* Bottom left text */
+            .bottom-left {
+                position: absolute;
+                bottom: 8px;
+                left: 16px;
+                }
+
+            .bottom-left:hover
+                {
+                position: absolute;
+                bottom: 8px;
+                left: 16px;
+                cursor: pointer;
+                color: blue;
+
+                }
+
+                /* Top left text */
+            .top-left {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                }
+
+                /* Top right text */
+            .top-right {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                }
+
+                /* Bottom right text */
+            .bottom-right {
+                position: absolute;
+                bottom: 8px;
+                right: 16px;
+                }
+
+                /* Centered text */
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+
+            .navbar {
+                overflow: hidden;
+                background-color: rgb(20, 20, 20);
+                position: fixed; /* Set the navbar to fixed position */
+                top: 0; /* Position the navbar at the top of the page */
+                width: 110%; /* Full width */
+                z-index: 100;
+                margin-left: -.2em;
+                }
+
+                /* Links inside the navbar */
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                /* Change background on mouse-over */
+            .navbar a:hover {
+                background: #ddd;
+                color: black;
+                }
+
+
+            
+            .column {
+                float: left;
+                width: 50%;
+                height: 300px;
+                background-color: rgba(159, 194, 189, 0.5);
+                color: rgb(13, 30, 82);
+                font-weight: 50;
+                border: 2px rgb(138, 21, 118);
+                border-radius: 2px;
+                }
+
+                /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                background-color: darkblue;
+                }
+
+
+
+                .container_2 {
+                position: relative;
+                width: 50%;
+                }
+
+                .image {
+                display: block;
+                width: 100%;
+                height: auto;
+                }
+
+                .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 200%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #008CBA;
+                }
+
+                .container_2:hover .overlay {
+                opacity: 1;
+                }
+
+                .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                
+              
+                }
+
+
+
+
+           
+            
+        </style>
+   </head> 
+    
+   <body class="grad"> 
+
+		<header id="home" class="header_2">
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#picture">Picture</a>
+                <a href="#moons">Moons</a>
+              </div>
+		</header>
+    
+        <div class="container">
+            <div class="pad_1"> <!-- Home Video-->
+                <video  autoplay muted loop width="100%">
+                    <source src="./Videos/jupiter.mp4" type="video/mp4">
+                </video>
+                <div class="centered">
+                    <h1 class="header_1"> Jupiter</h1>
+			        <p class="header_2"> The solar system's largest planet. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="picture" class="container"> <!-- Home Image-->
+          <img src="./Images/thumb/thumbnail_4.png" alt="" class="center blur border_1">
+          <div class="bottom-left"><a href="#moons">Ganymede</a></div>
+          <div class="top-left">Io</div>
+          <div class="top-right">Callisto</div>
+          <div class="bottom-right">Europa</div>
+          <div class="centered">Jupiter</div>
+		</div>
+      
+        <div class="row pad_1"> <!-- Info Collumns-->
+            <div class="column">
+                <h1>History</h1>
+                <p>Jupiter is of ancient knowledge. Known thorought the ages as many things. zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    zzzzzzzzz zzzzzzzzzz zzzzzzzzz zzzzzzzz zzzzzzzzzz
+                    
+                </p>
+            </div>
+            <div class="column">
+                <h1>About</h1>
+                <p>A gas giant with 76 moons. </p>
+            </div>
+        </div>
+
+        <div class="row pad_1"> <!-- Photo overlay Collumns-->
+            <div class="column container_2"> 
+                    <img src="./Images/thumb/thumbnail_1.png" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">
+                            <blockquote>
+                                Hello World zzzzzzzzzzzz zzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzz
+                                zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                                zzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzz
+                                zzzzzzzzzzzz zzzzzzzzzzzzzzzzzz zzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzz zzzzzzzzz
+                            </blockquote>
+                        </div>
+                    </div>
+            </div>
+            <div class="column container_2"> 
+                    <img src="./Images/thumb/thumbnail_1.png" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="pad_1">
+            <div class="pad_1"> <!--Data Table-->
+                <h3 id="moons" class="header_2 pad_1"> The Galilean Moons</h3>
+                <h4 class="header_2">Jupiter's four largest moons - they are worlds of their own.</h4>
+                <table class="table">
+                    <tr class="table_header">
+                        <th>Name</th>
+                        <th>Diameter (km)</th>
+                        <th>Distance from Planet (km)</th>
+                        <th>Orbital Period (Days)</th>
+                    </tr>
+                    <tr class="table_data">
+                        <td>Callisto</td>
+                        <td>4,800</td>
+                        <td>1,883,000</td>
+                        <td>16.689</td>
+                    </tr>
+                    <tr class="table_data">
+                        <td>Europa</td>
+                        <td>3126</td>
+                        <td>670,900</td>
+                        <td>3.551</td>
+                    </tr>
+                    <tr class="table_data">
+                        <td>Ganymede</td>
+                        <td>5276</td>
+                        <td>670,900</td>
+                        <td>3.551</td>
+                    </tr>
+                    <tr class="table_data">
+                        <td>Io</td>
+                        <td>3,629</td>
+                        <td>421,600</td>
+                        <td>1.769</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer_1 pad_1">
+            <p>Author: James Hannafin</p>
+            <p><a href="mailto:fakeemail@123.com">fakeemail@123.com</a></p>
+        </footer>
+
+   </body>  
+</html> 

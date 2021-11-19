@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>James Hannafin</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    </head>
+
+    <!--Body-->
+    <body class="background"> <!--Delete bg class-->
+        
+        <!--Navbar-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#gitHub">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+        <!--Background video-->
+        <div id="home">
+            <video autoplay muted loop id="typing_video">
+                <source src="./Videos/coding.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="video_text">
+            <h1>James Hannafin</h1>
+            <h1>_______________</h1>
+            <br>
+            <h1>Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>  There are two methods in software design.
+                        <br>One is to make the program so simple, there are obviously no errors.
+                        <br>    The other is to make it so complicated, there are no obvious errors.
+                    </q>
+                    <br> -Tony Hoare
+                    <br>
+                    <br> My name is James Hannafin Welcome to my portfolio website. This is where you can find a collection of my work as well as contact information.
+                    <br>
+                    <br> Enjoy!
+                    <br>
+
+                </p>
+            </strong>
+        </div>
+
+        <br>
+        
+      
+
+        <!--About section-->
+        <div class="row" id="about">
+            <br>
+            <!--Left column-->
+            <div class="column_2">
+                <img src="images/labtop.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="column_1">
+                <h1>About</h1>
+                <p>
+                    I am an avid software developer who really does seek the thrill of compiling the perfect project;
+                     with a background as an English major, it isn't hard for me to find the poetic beuty in a nice body of code.
+                     you can learn more about me ***HERE***. But this is the short version:
+                    <br>
+                    <br>I have been coding for over five years and am a recent graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+                    Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#,Github,GML,VS Code and more.  
+                    I am a full-stack developer currently working indepently and would love to work with you on your project. You can find my <a href="#contact">contact information</a> below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="row" id="gitHub">
+            <!--Left column-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can see some of my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/jameshannafin" target="_blank">My Github account</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="column_2">
+                <a href="https://github.com/jameshannafin" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div id="contact" class="row">
+            <!-- left-->
+            <div class="column_2 column_tall">
+                <img src="images/contact.jpg" alt="contact_image">
+            </div>
+            <!--right-->
+            <div class="column_1 column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/moqygrzy" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Kid Flid, <a href="https://twitter.com/kidflid" target="_blank">Twitter</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
