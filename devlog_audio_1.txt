@@ -1,0 +1,4 @@
+New Directional Sound Functionality.
+Before this, all the sounds would just play from the speakers at regular volume.
+My new goal is to make all the in game sounds have more realistic properties, add all necasary sounds,
+ and add sound settings in the menu
